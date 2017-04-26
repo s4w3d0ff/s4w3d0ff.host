@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
     <link rel="stylesheet" href="css/btcdonate.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
     <style>
       body {
         background-color: black;
@@ -76,8 +77,13 @@
             <p><a class="twitter-timeline" href="https://twitter.com/s4w3d0ff">Tweets by s4w3d0ff</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
         </div>
         <div class="col-sm-4">
-            <p><a class="twitter-timeline" href="https://twitter.com/CGAnomaly">Tweets by CGAnomaly</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-        </div>
+            <div id="putTheWidgetHere"></div>
+            <script type="text/javascript">
+              SC.oEmbed('http://soundcloud.com/s4w3d0ff/likes', {
+                element: document.getElementById('putTheWidgetHere')
+              });
+            </script>
+       </div>
     </div>
   </div>
 
