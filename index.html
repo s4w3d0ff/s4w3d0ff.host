@@ -77,11 +77,30 @@
             <p><a class="twitter-timeline" href="https://twitter.com/s4w3d0ff">Tweets by s4w3d0ff</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
         </div>
         <div class="col-sm-4">
-            <div id="putTheWidgetHere"></div>
+            <iframe id="sc-widget" src="https://w.soundcloud.com/player/?url=http://soundcloud.com/s4w3d0ff/likes" width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+            <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
             <script type="text/javascript">
-              SC.oEmbed('http://soundcloud.com/s4w3d0ff/likes', {
-                element: document.getElementById('putTheWidgetHere')
-              });
+              (function(){
+                var widgetIframe = document.getElementById('sc-widget'),
+                    widget       = SC.Widget(widgetIframe);
+
+                widget.bind(SC.Widget.Events.READY, function() {
+                  widget.bind(SC.Widget.Events.PLAY, function() {
+                    // get information about currently playing sound
+                    widget.getCurrentSound(function(currentSound) {
+                      console.log('sound ' + currentSound.get('') + 'began to play');
+                    });
+                  });
+                  // get current level of volume
+                  widget.getVolume(function(volume) {
+                    console.log('current volume value is ' + volume);
+                  });
+                  // set new volume level
+                  widget.setVolume(50);
+                  // get the value of the current position
+                });
+
+              }());
             </script>
        </div>
     </div>
