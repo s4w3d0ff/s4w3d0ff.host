@@ -5,14 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
     <link rel="stylesheet" href="css/btcdonate.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
    
     <style>
+      html {
+        position: relative;
+        min-height: 100%;
+      }
       body {
         background-color: black;
         color: gray;
+        margin: 0 0 100px;
       }
       .btcdonate-bubble {
         background: #111;
@@ -31,10 +35,16 @@
         height: 30px;
         display: contents;
       }
-      .footer {
+      footer {
         background-color: #333;
         border-top: solid 1px #ccc;
         padding: 10px 5px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+        overflow:hidden;
       }
     </style>
 </head>
