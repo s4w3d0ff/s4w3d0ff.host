@@ -1,0 +1,42 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  background-color: black;
+  color: gray;
+  margin: 0 0 60px;
+}
+.social-links {
+  top: 0;
+  right: 0;
+  position: absolute;
+  padding: 15px 10px;
+}
+.btcdonate-bubble {
+  background: #111;
+}
+.page-header {
+  margin-top: 55px;
+}
+.navbar-default {
+  background: #333;
+}
+.navbar-brand {
+  padding: 10px 15px;
+}
+.navbar-brand img {
+  width: 30px;
+  height: 30px;
+  display: contents;
+}
+footer {
+  background-color: #333;
+  border-top: solid 1px #ccc;
+  padding: 5px 5px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
