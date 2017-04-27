@@ -10,24 +10,17 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-  <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <a class="navbar-brand" href="#"><img src="images/6069664.png"/> <span>s4w3d0ff.host</span></a>
       </div>
-      <div id="navbar" class="collapse navbar-collapse">
+      <div id="navbar">
         <ul class="nav navbar-nav">
           <li><a href="#about">About</a></li>
           <li><a href="https://forum.s4w3d0ff.host">Forum</a></li>
         </ul>
-      </div><!--/.nav-collapse -->
+      </div>
       <div class='social-links'>
         <a href="https://twitter.com/s4w3d0ff" class="twitter-follow-button" data-show-count="false">Follow @s4w3d0ff</a>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -36,7 +29,6 @@
     </div>
   </nav>
 
-  <!-- Begin page content -->
   <div class="container">
     <div class="page-header">
       <center><h3>spray and pray</h3></center>
@@ -60,11 +52,18 @@
 
   <footer class="footer">
     <a href='bitcoin:1KgvBr9T5FCewjpy6ZvzxHSkJsP9uh22NU?label=s4w3d0ff'>
-      <img src='https://img.shields.io/badge/donate-bitcoin-orange.svg' style="vertical-align: initial;"/>
+      <img src='https://img.shields.io/badge/donate-BTC-blue.svg' style="vertical-align: initial;"/>
     </a>
     <a href='litecoin:LakbntAYrwpVSnLWj1fCLttVzpiDXDa5JV?label=s4w3d0ff'>
-      <img src='https://img.shields.io/badge/donate-litecoin-white.svg' style="vertical-align: initial;"/>
-    </a> <br>
+      <img src='https://img.shields.io/badge/donate-LTC-blue.svg' style="vertical-align: initial;"/>
+    </a>
+    <a href='dash:Xr6yRpLo8aCYVHzmRxDdVDBUBai8kRcQiV?label=s4w3d0ff'>
+      <img src='https://img.shields.io/badge/donate-DASH-blue.svg' style="vertical-align: initial;"/>
+    </a>
+    <a href='dogecoin:DAQjkQNbhpUoQw7KHAGkDYZ3yySKi751dd?label=s4w3d0ff'>
+      <img src='https://img.shields.io/badge/donate-DOGE-blue.svg' style="vertical-align: initial;"/>
+    </a>
+    <br>
     <span class='copyright'> &copy;opyright s4w3d0ff.host </span>
   </footer>
 
@@ -78,7 +77,7 @@
   <script>
     /* make donate qr popups */
     btcdonate({
-      fill: "#990000",
+      fill: "#fff",
       radius: 0
     });
     /* make soundcloud widget */

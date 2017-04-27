@@ -24,6 +24,16 @@ var btcdonate = function(options){
     .addClass("btcdonate-trigger")
     .wrap('<span class="btcdonate"></span>');
 
+  // Wrap all links containing href="dogecoin:..." so that we can operate on them
+  $("a[href^=dash],a[data-btcaddress]")
+    .addClass("btcdonate-trigger")
+    .wrap('<span class="btcdonate"></span>');
+
+  // Wrap all links containing href="dogecoin:..." so that we can operate on them
+  $("a[href^=dogecoin],a[data-btcaddress]")
+    .addClass("btcdonate-trigger")
+    .wrap('<span class="btcdonate"></span>');
+
   // Append the bubble and attach the hide/show effects for it
   $('.btcdonate').each(function () {
 
