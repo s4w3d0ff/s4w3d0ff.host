@@ -11,6 +11,30 @@ body {
   margin-top: 70px;
   margin-bottom: 30px;
 }
+
+
+#twitchStream {
+  float: left;
+  width: 70%;
+}
+
+#twitchChat{
+  float: left;
+  width: 30%;
+}
+
+.jumbotron {
+  background-color: transparent;
+  margin-bottom: -40px;
+  margin-top: 70px;
+  padding-bottom: 0;
+}
+
+.project-link {
+  vertical-align: top;
+  padding: 0px 10px;
+}
+
 .quote {
   padding: 20px 10px;
 }
