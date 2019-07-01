@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/quotes.js"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
@@ -37,11 +38,31 @@
         </ul>
     </sidebar>
     <social>
-        <a href="https://stackoverflow.com/users/3389859/s4w3d0ff">
-            <img src="https://stackoverflow.com/users/flair/3389859.png?theme=dark" width="208" height="58">
+        <a class="social-link" href="https://stackoverflow.com/users/3389859/s4w3d0ff">
+            <img class="social-img" src="images/stackoverflow.svg" style="margin-right:-3px" width="35" height="35">
+            <img class="linktooltip"
+                 src="https://stackoverflow.com/users/flair/3389859.png?theme=dark"
+                 width="208" height="58">
+        </a>
+        <a class="social-link" href="https://github.com/s4w3d0ff">
+            <img class="social-img" src="images/github.svg" width="25" height="25">
+            <span class="linktooltip">Github.com
+            </span>
+        </a>
+        <a class="social-link" href="https://twitter.com/s4w3d0ff">
+            <img class="social-img" src="images/twitter.svg" width="25" height="25">
+            <span class="linktooltip">Twitter.com
+            </span>
         </a>
     </social>
-    <quote>Quote</quote>
+    <quote>
+        <!--
+        <form class="quote-button" action="javascript:getQuote();">
+            <button type=submit>New</button>
+        </form>
+        -->
+        <span id="quote"></span>
+    </quote>
     <main>Main Content</main>
     <footer>
         <a href='bitcoin:1KgvBr9T5FCewjpy6ZvzxHSkJsP9uh22NU?label=s4w3d0ff'>
@@ -60,5 +81,8 @@
         <span class='copyright'> &copy;opyright s4w3d0ff.host </span>
     </footer>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script>
+    getQuote();
+</script>
 </body>
 </html>
