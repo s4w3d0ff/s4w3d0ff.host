@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/s4w3d0ff
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://s4w3d0ff.host
+  * I am s4w3d0ff (https://keybase.io/s4w3d0ff) on keybase.
+  * I have a public key with fingerprint C952 7DDB 267F CE57 7DAC  61A1 B099 7C35 23A3 B07E
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101f4627029d25478bb38c3acaf7b30771083abc868e71241fa0d3a3e6c6c1c1e6d0a",
+      "fingerprint": "c9527ddb267fce577dac61a1b0997c3523a3b07e",
+      "host": "keybase.io",
+      "key_id": "b0997c3523a3b07e",
+      "kid": "0101f4627029d25478bb38c3acaf7b30771083abc868e71241fa0d3a3e6c6c1c1e6d0a",
+      "uid": "65ac7c0f74fe239b691b836046fdf619",
+      "username": "s4w3d0ff"
+    },
+    "service": {
+      "hostname": "s4w3d0ff.host",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1561996783,
+  "expire_in": 157680000,
+  "prev": "9b1d33b12043933cb89ed97861e3ffa020535b457bb0eb1b62a2dbc76b979c4d",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIgAnicrVJtiExRGJ41dmSl9VGIUJe1qTF7zj33nnPPlKH94WvQ7kohdtxz7rm7
+t10zY+buDqaptTIomyhZsitbvooo2Z++21YoyiJsuyUS25JsSA3nbvyRn86f03nP
+8zzv87y9dyf6fSVF1f3lC4YedZ8vun/rWJNvy8xFH7MKS1g7lXBWaRCjl2i0RNqN
+NTiWElYABNDWsEqASi1V14jBGDI4MrlpE4YAIRAYyGTcwIYgUNWgbQILmUhgjjnk
+UGALmEpQsZ14nUglU07clbKc6iqxLKZiYnOhE2KZHEMTMkAp4UhXpQIDREhifSLt
+MaQ5ZqZFyEnImnzERu39A/+ffTeNymHd5IQDm2i2UBFlmEJmIAw0bFs2htQDpkUq
+bm4TEp3WMsgCtq3kgoqsNjtceIP1kvyFCI2mCyrJVMJN8ESj/Kp33WTYY7o7kx40
+I1jst0iMOXFLzlESmkUq7STiShhKJHcdTxXq0gnFxEBBRexIOikRczyETrAB5PHa
+iGYpSRm0EGJQBRqiCHFmUGFRYmAokC3noAId6UzTCWNAMMiwaqoW4wQzSijXLMWL
+tT2eUMJE2jTrvEBOXdx0m1JCyd2+uXmsr6jEFyge4+2Xr2T8pD9bV71nXEHTuj/n
+0cNXF5/7B8oXHZ+1OHy28LTLn37bc8W2T+SP/oxGH42/9b7s4LP+Ne/oxoGrbu/l
+CdcXPotUdu2fMf9kYam+LxQZjHxtL3mS+Tp11RTj+zJaNjg32rE7f6im90rT7G85
+51Jt4NzhN2tGYG1h7Qd/dKilOdtbtaNsb3vP/eix2myFHewP9GxdMXTqw6H4vddj
+hzOt2c2lB8pXrsu3dttGxdYXwyOhfC853d45bXqkgjVunPxSz91Bj6eV3/hZOW/b
+6iO+T8UFbUnNpNZNH5+H+xo29L2khS/Ds+ZMaFnet75toDN7Jlm8q25e27gH1wL1
+VZmDuR+lHfuXoQuDIPAL7pg+NA==
+=vkF9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/s4w3d0ff
+
+==================================================================
