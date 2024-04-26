@@ -1,79 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>s4w3d0ff.host</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="js/quotes.js"></script>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>s4w3d0ff.host</title>
+	<script src="js/quotes.js"></script>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Gabarito' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gabarito';
+			font-size: 18px;
+            background-color: #1a1a1a;
+            color: #608c68;
+        }
+		h1 {
+			margin:0;
+		}
+        .container {
+            width: 90%;
+            max-width: 720px;
+            margin: 20px auto;
+            background-color: #333;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+		
+        .header {
+            background: linear-gradient(to bottom, #010615, #001200);
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: 10px;
+            text-align: right;
+			font-family: 'Bebas Neue';
+			font-size: 36px;
+			text-shadow: #4a4b2e82 3px -3px 0px;
+			height: 80px;
+        }
+
+        .content {
+            padding: 42px;
+			background-color: #020401;
+			border: 1px solid #012907;
+			border-left-width: 0px;
+			border-right-width: 0px;
+        }
+
+        .footer {
+            background: linear-gradient(to top, #010615, #001200);
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding: 10px;
+            text-align: center;
+			box-shadow: 0px 5px 0px #000a00a1;
+        }
+		.logo {
+			width: 70px;
+			position: relative;
+			display:flex;
+			top: -84px;
+		}
+		.sub {
+			font-size:15px;
+			margin-left: -12px;
+		}
+		.social-link {
+		 position: relative;
+		 display: inline-block;
+		 padding: 3px;
+		}
+
+		.social-img {
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			-webkit-filter: drop-shadow( 1px 2px 2px #84e17070);
+			filter: drop-shadow( 1px 2px 2px #84e17070);
+		}
+		#quote {
+			padding: 20px 0px 20px 0px;
+		}
+    </style>
 </head>
 <body>
-    <logo class="header-bg">
-        <img src="images/logo.png"/>
-    </logo>
-    <header class="header-bg">
-        <h1>s4w3d0ff.host</h1>
-    </header>
-    <sidebar>
-        <h3>Projects:</h3>
-        <ul>
-            <li>
-                <a class="project-link" href="https://github.com/s4w3d0ff/python-poloniex">python-poloniex</a>
-                <br>
-                <a class="github-button" href="https://github.com/s4w3d0ff/python-poloniex"
-                   data-icon="octicon-star"
-                   data-show-count="true"
-                   aria-label="Star s4w3d0ff/python-poloniex on GitHub">Star</a>
-            </li>
-            <li>
-                <a class="project-link" href="https://github.com/s4w3d0ff/donnie">donnie</a>
-                <br>
-                <a class="github-button" href="https://github.com/s4w3d0ff/donnie"
-                   data-icon="octicon-star"
-                   data-show-count="true"
-                   aria-label="Star s4w3d0ff/donnie on GitHub">Star</a>
-            </li>
-        </ul>
-    </sidebar>
-    <social>
-        <a class="social-link" href="https://stackoverflow.com/users/3389859/s4w3d0ff">
-            <img class="social-img" src="images/stackoverflow.svg" style="margin-right:-3px" width="35" height="35">
-            <img class="linktooltip"
-                 src="https://stackoverflow.com/users/flair/3389859.png?theme=dark"
-                 width="208" height="58">
-        </a>
-        <a class="social-link" href="https://github.com/s4w3d0ff">
-            <img class="social-img" src="images/github.svg" width="25" height="25">
-            <span class="linktooltip">Github.com
-            </span>
-        </a>
-        <a class="social-link" href="https://twitter.com/s4w3d0ff">
-            <img class="social-img" src="images/twitter.svg" width="25" height="25">
-            <span class="linktooltip">Twitter.com
-            </span>
-        </a>
-    </social>
-    <quote>
-        <!--
-        <form class="quote-button" action="javascript:getQuote();">
-            <button type=submit>New</button>
-        </form>
-        -->
-        <span id="quote"></span>
-    </quote>
-    <main>
-        <img align="left" alt="s4w3d0ff's Github Stats" src="https://github-readme-stats.vercel.app/api?username=s4w3d0ff&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&hide_title=true&theme=merko" />
-        <img align="left" alt="s4w3d0ff's Github Stats" src="https://github-readme-stats.vercel.app/api/top-langs/?username=s4w3d0ff&layout=compact&hide_border=true&hide_title=true&theme=merko" />
-    </main>
-    <footer>
-        <span class='copyright'> &copy;opyright s4w3d0ff.host </span>
-        <a href='bitcoin:1KgvBr9T5FCewjpy6ZvzxHSkJsP9uh22NU?label=s4w3d0ff'>
-          <img class="donate-image" src='images/donate-BTC-blue.svg'/>
-        </a>
-    </footer>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+    <div class="container">
+        <div class="header">
+			<h1>s4w3d0ff<span class="sub">.host</span></h1>
+			<img class="logo" src="images/logo.png"/>
+        </div>
+        <div class="content">
+			<quote>
+				<span id="quote"></span>
+			</quote>
+        </div>
+        <div class="footer">
+			<a class="social-link" href="https://discord.gg/DhwXjT7mJw">
+				<img class="social-img" src="images/discord.svg" width="35" height="35">
+			</a>
+			<a class="social-link" href="https://twitch.tv/s4w3d0ff">
+				<img class="social-img" src="images/twitch.svg" width="35" height="35">
+			</a>
+			<a class="social-link" href="https://youtube.com/@s4w3d0ff">
+				<img class="social-img" src="images/youtube.svg" width="35" height="35">
+			</a>
+			<a class="social-link" href="https://twitter.com/s4w3d0ff">
+				<img class="social-img" src="images/twitter.svg" width="35" height="35">
+			</a>
+			<a class="social-link" href="https://github.com/s4w3d0ff">
+				<img class="social-img" src="images/github.svg" width="35" height="35">
+			</a>
+			<a class="social-link" href="https://stackoverflow.com/users/3389859/s4w3d0ff">
+				<img class="social-img" src="images/stackoverflow.svg" width="35" height="35">
+			</a>
+        </div>
+    </div>
 <script>
     getQuote();
 </script>
