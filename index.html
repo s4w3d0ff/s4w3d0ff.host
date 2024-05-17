@@ -9,93 +9,115 @@
 	<link href='https://fonts.googleapis.com/css?family=Gabarito' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
     <style>
+		:root {
+			--text: #518c81;
+			--bg: #060709;
+			--bg-gray: #3333334d;
+			--prime: #00241b;
+			--second: #004447;
+			--accent: #008DA8;
+		}
         body {
             margin: 0;
             padding: 0;
             font-family: 'Gabarito';
 			font-size: 18px;
-            background-color: #1a1a1a;
-            color: #004245;
+            background-color: var(--bg);
+            color: var(--text);
         }
 		h1 {
 			margin:0;
-			color:#008DA8;
+			color:var(--bg);
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+			-webkit-filter: drop-shadow( 0px -3px 6px #00251ca6);
+			filter: drop-shadow( 0px -3px 6px #00251ca6);
 		}
         .container {
             width: 90%;
             max-width: 720px;
             margin: 20px auto;
-            background-color: #333;
+            background-color: var(--bg-gray);
             border-radius: 15px;
-            padding: 20px;
+            padding: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             overflow: hidden;
         }
-		
         .header {
-            background: linear-gradient(to bottom, #010615, #06201e);
+			display: flex;
+			position: relative;
+			justify-content: center; /* Align horizontal */
+			align-items: center; /* Align vertical */
+            background: linear-gradient(to bottom, #004245, #0607099e);
             border-top-left-radius: 15px;
             border-top-right-radius: 15px;
             padding: 10px;
             text-align: right;
 			font-family: 'Bebas Neue';
-			font-size: 36px;
-			text-shadow: #4a4b2e82 3px -3px 0px;
+			font-size: 42px;
+			text-shadow: #0f859b61 0px 2px 2px;
 			height: 80px;
         }
-
         .content {
             padding: 42px;
-			background-color: #020401;
-			border: 1px solid #008DA8;
+			background-color: #02050a5c;
+			border: 1px solid #008DA8A3;
 			border-left-width: 0px;
 			border-right-width: 0px;
         }
 
         .footer {
-            background: linear-gradient(to top, #010615, #06201e);
+            background: linear-gradient(to bottom, var(--second), var(--bg));
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
+			border: 2px solid #85939c2b;
+			border-left-width: 0px;
+			border-right-width: 0px;
+			border-bottom-width: 0px;
             padding: 10px;
             text-align: center;
-			box-shadow: 0px 5px 0px #000a00a1;
+			box-shadow: 0px 4px 5px #000a00a1;
         }
 		.logo {
-			width: 70px;
-			position: relative;
+			width: 69px;
+			position: absolute;
+			left:14px;
+			top:14px;
 			display:flex;
-			top: -84px;
 			-webkit-filter: grayscale(100%);
 			filter: grayscale(100%);
-			-webkit-filter: drop-shadow( 0px 0px 7px #7bb9fbd1);
-			filter: drop-shadow( 0px 0px 7px #7bb9fbd1);
+			-webkit-filter: drop-shadow( 0px 0px 4px var(--bg));
+			filter: drop-shadow( 0px 0px 4px var(--bg));
 		}
 		.sub {
 			font-size:15px;
 			margin-left: -12px;
 		}
 		.social-link {
-		 position: relative;
-		 display: inline-block;
-		 padding: 3px;
+			position: relative;
+			display: inline-block;
+			padding: 3px;
 		}
-
 		.social-img {
+			color:var(--bg);
+			width:35px;
+			height:35px;
 			-webkit-filter: grayscale(100%);
 			filter: grayscale(100%);
-			-webkit-filter: drop-shadow( 1px 2px 2px #008DA870);
-			filter: drop-shadow( 1px 2px 2px #008DA870);
+			-webkit-filter: drop-shadow( 0px 1px 1px #008DA870);
+			filter: drop-shadow( 0px 1px 1px #008DA870);
 		}
 		#quote {
 			padding: 20px 0px 20px 0px;
 		}
+		path {fill: currentColor;}
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-			<h1>s4w3d0ff<span class="sub">.host</span></h1>
 			<img class="logo" src="images/logo.svg"/>
+			<h1><span class="sub">https://</span>s4w3d0ff<span class="sub">.host</span></h1>
         </div>
         <div class="content">
 			<quote>
@@ -104,22 +126,50 @@
         </div>
         <div class="footer">
 			<a class="social-link" href="https://discord.gg/DhwXjT7mJw">
-				<img class="social-img" src="images/discord.svg" width="35" height="35">
+				<svg id="discord-svg" class="social-img" width="800px" height="800px" viewBox="0 -28.5 256 256" preserveAspectRatio="xMidYMid">
+					<g><path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill-rule="nonzero">
+					</path></g>
+				</svg>
 			</a>
 			<a class="social-link" href="https://twitch.tv/s4w3d0ff">
-				<img class="social-img" src="images/twitch.svg" width="35" height="35">
+				<svg id="twitch-svg" class="social-img" width="800px" height="800px" viewBox="-2.5 -2 24 24" preserveAspectRatio="xMinYMin">
+					<path d="M1.25 0L0 3.75V17.5h5V20h2.5l2.5-2.5h3.75l5-5.325V0H1.25zM17.5 11.25L14 15H9.568l-2.693 1.959V15H2.5V1.25h15v10z"/>
+					<path d="M8.75 5H10v5H8.75zM12.5 5h1.25v5H12.5z"/>
+				</svg>
 			</a>
 			<a class="social-link" href="https://youtube.com/@s4w3d0ff">
-				<img class="social-img" src="images/youtube.svg" width="35" height="35">
+				<svg id="yt-svg" class="social-img" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+					<path d="M31.7,9.6c0,0-0.3-2.2-1.3-3.2c-1.2-1.3-2.6-1.3-3.2-1.4C22.7,4.7,16,4.7,16,4.7h0c0,0-6.7,0-11.2,0.3
+						c-0.6,0.1-2,0.1-3.2,1.4c-1,1-1.3,3.2-1.3,3.2S0,12.2,0,14.8v2.4c0,2.6,0.3,5.2,0.3,5.2s0.3,2.2,1.3,3.2c1.2,1.3,2.8,1.2,3.5,1.4
+						C7.7,27.2,16,27.3,16,27.3s6.7,0,11.2-0.3c0.6-0.1,2-0.1,3.2-1.4c1-1,1.3-3.2,1.3-3.2s0.3-2.6,0.3-5.2v-2.4
+						C32,12.2,31.7,9.6,31.7,9.6z M12.7,20.2l0-9l8.6,4.5L12.7,20.2z"/>
+				</svg>
 			</a>
 			<a class="social-link" href="https://twitter.com/s4w3d0ff">
-				<img class="social-img" src="images/twitter.svg" width="35" height="35">
+				<svg id="twitter-svg" class="social-img" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+					<path d="M32,6.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6C25.7,3.8,24,3,22.2,3
+						c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5C10.3,10.8,5.5,8.2,2.2,4.2c-0.6,1-0.9,2.1-0.9,3.3c0,2.3,1.2,4.3,2.9,5.5
+						c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1
+						c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1C2.9,27.9,6.4,29,10.1,29c12.1,0,18.7-10,18.7-18.7
+						c0-0.3,0-0.6,0-0.8C30,8.5,31.1,7.4,32,6.1z"/>
+				</svg>
 			</a>
 			<a class="social-link" href="https://github.com/s4w3d0ff">
-				<img class="social-img" src="images/github.svg" width="35" height="35">
+				<svg id="github-svg" class="social-img" width="32px" height="32px" viewBox="0 0 32 32" enable-background="new 0 0 32 32" xml:space="preserve">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M16,0.4c-8.8,0-16,7.2-16,16c0,7.1,4.6,13.1,10.9,15.2
+						c0.8,0.1,1.1-0.3,1.1-0.8c0-0.4,0-1.4,0-2.7c-4.5,1-5.4-2.1-5.4-2.1c-0.7-1.8-1.8-2.3-1.8-2.3c-1.5-1,0.1-1,0.1-1
+						c1.6,0.1,2.5,1.6,2.5,1.6c1.4,2.4,3.7,1.7,4.7,1.3c0.1-1,0.6-1.7,1-2.1c-3.6-0.4-7.3-1.8-7.3-7.9c0-1.7,0.6-3.2,1.6-4.3
+						c-0.2-0.4-0.7-2,0.2-4.2c0,0,1.3-0.4,4.4,1.6c1.3-0.4,2.6-0.5,4-0.5c1.4,0,2.7,0.2,4,0.5C23.1,6.6,24.4,7,24.4,7
+						c0.9,2.2,0.3,3.8,0.2,4.2c1,1.1,1.6,2.5,1.6,4.3c0,6.1-3.7,7.5-7.3,7.9c0.6,0.5,1.1,1.5,1.1,3c0,2.1,0,3.9,0,4.4
+						c0,0.4,0.3,0.9,1.1,0.8C27.4,29.5,32,23.5,32,16.4C32,7.6,24.8,0.4,16,0.4z"/>
+				</svg>
+
 			</a>
 			<a class="social-link" href="https://stackoverflow.com/users/3389859/s4w3d0ff">
-				<img class="social-img" src="images/stackoverflow.svg" width="35" height="35">
+				<svg id="sto-svg" class="social-img" width="110px" height="110px" viewBox="0 0 110 110">
+					<path d="M84.4 93.8V70.6h7.7v30.9H22.6V70.6h7.7v23.2z"/>
+					<path d="M38.8 68.4l37.8 7.9 1.6-7.6-37.8-7.9-1.6 7.6zm5-18l35 16.3 3.2-7-35-16.4-3.2 7.1zm9.7-17.2l29.7 24.7 4.9-5.9-29.7-24.7-4.9 5.9zm19.2-18.3l-6.2 4.6 23 31 6.2-4.6-23-31zM38 86h38.6v-7.7H38V86z"/>
+				</svg>
 			</a>
         </div>
     </div>
