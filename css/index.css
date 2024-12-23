@@ -1,0 +1,106 @@
+:root {
+	--text: #518c81;
+	--bg: #060709;
+	--bg-gray: #181818cc;
+	--prime: #00241b;
+	--second: #004447;
+	--accent: #008DA8;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Gabarito';
+	font-size: 18px;
+	background-color: var(--bg);
+	color: var(--text);
+}
+h1 {
+	margin:0;
+	color:var(--bg);
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-filter: drop-shadow( 0px -3px 6px #00251ca6);
+	filter: drop-shadow( 0px -3px 6px #00251ca6);
+}
+.container {
+	position: relative;
+	z-index: 2;
+	width: 90%;
+	max-width: 720px;
+	margin: 20px auto;
+	background-color: var(--bg-gray);
+	border-radius: 15px;
+	padding: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+}
+.header {
+	display: flex;
+	position: relative;
+	justify-content: center; /* Align horizontal */
+	align-items: center; /* Align vertical */
+	background: linear-gradient(to bottom, #004245, #0607099e);
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 10px;
+	text-align: right;
+	font-family: 'Bebas Neue';
+	font-size: 42px;
+	text-shadow: #0f859b61 0px 2px 2px;
+	height: 80px;
+}
+.content {
+	padding: 42px;
+	background-color: #02050a5c;
+	border: 1px solid #008DA8A3;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
+
+.footer {
+	background: linear-gradient(to bottom, var(--second), var(--bg));
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border: 2px solid #85939c2b;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 0px 4px 5px #000a00a1;
+}
+.logo {
+	width: 69px;
+	position: absolute;
+	left:14px;
+	top:14px;
+	display:flex;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-filter: drop-shadow( 0px 0px 4px var(--bg));
+	filter: drop-shadow( 0px 0px 4px var(--bg));
+}
+.sub {
+	font-size:15px;
+	margin-left: -12px;
+}
+.social-link {
+	position: relative;
+	display: inline-block;
+	padding: 3px;
+}
+.social-img {
+	color:var(--bg);
+	width:35px;
+	height:35px;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-filter: drop-shadow( 0px 1px 1px #008DA870);
+	filter: drop-shadow( 0px 1px 1px #008DA870);
+}
+#quote {
+	padding: 20px 0px 20px 0px;
+}
+path {
+	fill: currentColor;
+}
