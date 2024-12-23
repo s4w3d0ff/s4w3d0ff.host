@@ -4,116 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>s4w3d0ff.host</title>
-	<script src="js/quotes.js"></script>
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 	<link href='https://fonts.googleapis.com/css?family=Gabarito' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Bebas Neue' rel='stylesheet'>
-    <style>
-		:root {
-			--text: #518c81;
-			--bg: #060709;
-			--bg-gray: #3333334d;
-			--prime: #00241b;
-			--second: #004447;
-			--accent: #008DA8;
-		}
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Gabarito';
-			font-size: 18px;
-            background-color: var(--bg);
-            color: var(--text);
-        }
-		h1 {
-			margin:0;
-			color:var(--bg);
-			-webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-			-webkit-filter: drop-shadow( 0px -3px 6px #00251ca6);
-			filter: drop-shadow( 0px -3px 6px #00251ca6);
-		}
-        .container {
-            width: 90%;
-            max-width: 720px;
-            margin: 20px auto;
-            background-color: var(--bg-gray);
-            border-radius: 15px;
-            padding: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            overflow: hidden;
-        }
-        .header {
-			display: flex;
-			position: relative;
-			justify-content: center; /* Align horizontal */
-			align-items: center; /* Align vertical */
-            background: linear-gradient(to bottom, #004245, #0607099e);
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-            padding: 10px;
-            text-align: right;
-			font-family: 'Bebas Neue';
-			font-size: 42px;
-			text-shadow: #0f859b61 0px 2px 2px;
-			height: 80px;
-        }
-        .content {
-            padding: 42px;
-			background-color: #02050a5c;
-			border: 1px solid #008DA8A3;
-			border-left-width: 0px;
-			border-right-width: 0px;
-        }
-
-        .footer {
-            background: linear-gradient(to bottom, var(--second), var(--bg));
-            border-bottom-left-radius: 15px;
-            border-bottom-right-radius: 15px;
-			border: 2px solid #85939c2b;
-			border-left-width: 0px;
-			border-right-width: 0px;
-			border-bottom-width: 0px;
-            padding: 10px;
-            text-align: center;
-			box-shadow: 0px 4px 5px #000a00a1;
-        }
-		.logo {
-			width: 69px;
-			position: absolute;
-			left:14px;
-			top:14px;
-			display:flex;
-			-webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-			-webkit-filter: drop-shadow( 0px 0px 4px var(--bg));
-			filter: drop-shadow( 0px 0px 4px var(--bg));
-		}
-		.sub {
-			font-size:15px;
-			margin-left: -12px;
-		}
-		.social-link {
-			position: relative;
-			display: inline-block;
-			padding: 3px;
-		}
-		.social-img {
-			color:var(--bg);
-			width:35px;
-			height:35px;
-			-webkit-filter: grayscale(100%);
-			filter: grayscale(100%);
-			-webkit-filter: drop-shadow( 0px 1px 1px #008DA870);
-			filter: drop-shadow( 0px 1px 1px #008DA870);
-		}
-		#quote {
-			padding: 20px 0px 20px 0px;
-		}
-		path {fill: currentColor;}
-    </style>
+	<link href='css/index.css' rel='stylesheet'>
+	<link href='css/snow.css' rel='stylesheet'>
+	<script src="js/quotes.js"></script>
 </head>
 <body>
+	<div id="controls">
+		<button id="close-controls" aria-label="Close Controls">✖</button>
+		<label for="wind">Wind Strength:</label>
+		<input type="range" id="wind" min="-3" max="3" step="0.1" value="0">
+		<span id="wind-value">0</span><br>
+
+		<label for="turbulence-speed">Turbulence Speed:</label>
+		<input type="range" id="turbulence-speed" min="1" max="50" step="1" value="42">
+		<span id="turbulence-speed-value">42</span><br>
+
+		<label for="turbulence-amplitude">Turbulence Amplitude:</label>
+		<input type="range" id="turbulence-amplitude" min="0.1" max="5" step="0.1" value="0.2">
+		<span id="turbulence-amplitude-value">0.2</span><br>
+
+		<label for="size">Snowflake Size:</label>
+		<input type="range" id="size" min="1" max="5" step="0.1" value="2.5">
+		<span id="size-value">2.5</span><br>
+
+		<label for="speed">Snowfall Speed:</label>
+		<input type="range" id="speed" min="0.1" max="5" step="0.1" value="0.5">
+		<span id="speed-value">0.5</span><br>
+
+		<label for="accumulation">Snow Accumulation:</label>
+		<input type="range" id="accumulation" min="0.1" max="5" step="0.1" value="1.3">
+		<span id="accumulation-value">1.3</span><br>
+
+		<label for="melting">Snow Melting Rate:</label>
+		<input type="range" id="melting" min="0" max="1" step="0.001" value="0.001">
+		<span id="melting-value">0.001</span><br>
+
+		<label for="smoothing">Smoothing Frequency:</label>
+		<input type="range" id="smoothing" min="0" max="1" step="0.01" value="0.42">
+		<span id="smoothing-value">0.42</span><br>
+
+		<label for="spread">Spread Radius:</label>
+		<input type="range" id="spread" min="1" max="20" step="1" value="6">
+		<span id="spread-value">6</span>
+	</div>
+	<button id="snowflake-icon" aria-label="Show Controls">❄</button>
+	<canvas id="snow-canvas"></canvas>
     <div class="container">
         <div class="header">
 			<img class="logo" src="images/logo.svg"/>
@@ -176,5 +114,6 @@
 <script>
     getQuote();
 </script>
+<script src="js/snow.js"></script>
 </body>
 </html>
