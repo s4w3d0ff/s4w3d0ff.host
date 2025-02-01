@@ -1,7 +1,7 @@
 :root {
 	--text: #518c81;
 	--bg: #060709;
-	--bg-gray: #181818cc;
+	--bg-gray: #181818ed;
 	--prime: #00241b;
 	--second: #004447;
 	--accent: #008DA8;
@@ -26,7 +26,8 @@ h1 {
 	position: relative;
 	z-index: 2;
 	width: 90%;
-	max-width: 720px;
+	max-width: 1080px;
+	min-width: 535px;
 	margin: 20px auto;
 	background-color: var(--bg-gray);
 	border-radius: 15px;
